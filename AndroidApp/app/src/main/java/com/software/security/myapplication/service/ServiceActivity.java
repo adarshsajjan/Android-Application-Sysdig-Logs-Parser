@@ -9,13 +9,15 @@ import android.os.Handler;
 import android.os.HandlerThread;
 import android.os.IBinder;
 import android.os.Looper;
-import android.util.Log;
 import android.view.View;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.software.security.myapplication.R;
+
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
 
 public class ServiceActivity extends AppCompatActivity {
 
@@ -29,6 +31,12 @@ public class ServiceActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_service);
         timestampText = findViewById(R.id.serviceTime);
+
+        Calendar calendar;
+        calendar = Calendar.getInstance();
+        SimpleDateFormat simpleDateFormat = new SimpleDateFormat("HH:mm");
+        String currDateTime = simpleDateFormat.format(calendar.getTime());
+        timestampText.setText(currDateTime);
     }
 
     @Override
