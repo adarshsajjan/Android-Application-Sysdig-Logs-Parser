@@ -64,6 +64,11 @@
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
+        <service
+            android:name=".service.TimeService"
+            android:enabled="true"
+            android:exported="true"/>
+
     </application>
 
 </manifest>
