@@ -13,22 +13,18 @@
         android:theme="@style/Theme.MyApplication"
         tools:targetApi="31">
         <provider
-            android:name=".ContactContentProvider"
+            android:name=".contentProvider.ContactContentProvider"
             android:authorities="com.software.security.contacts"
             android:enabled="true"
             android:exported="true"></provider>
 
         <receiver
-            android:name=".BroadcastActivityReceiver"
+            android:name=".broadcast.BroadcastActivityReceiver"
             android:enabled="true"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="com.example.homework"></action>
-            </intent-filter>
-        </receiver>
+            android:exported="true"></receiver>
 
         <activity
-            android:name=".ContentProviderActivity"
+            android:name=".contentProvider.ContentProviderActivity"
             android:exported="false"
             android:label="@string/content_provider_name">
             <meta-data
@@ -36,7 +32,7 @@
                 android:value="" />
         </activity>
         <activity
-            android:name=".ServiceActivity"
+            android:name=".service.ServiceActivity"
             android:exported="false"
             android:label="@string/service_name">
             <meta-data
@@ -44,7 +40,7 @@
                 android:value="" />
         </activity>
         <activity
-            android:name=".BroadcastActivity"
+            android:name=".broadcast.BroadcastActivity"
             android:exported="false"
             android:label="@string/broadcast_message">
             <meta-data

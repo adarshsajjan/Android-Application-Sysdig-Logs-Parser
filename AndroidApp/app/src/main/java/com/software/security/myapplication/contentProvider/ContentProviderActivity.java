@@ -1,4 +1,4 @@
-package com.software.security.myapplication;
+package com.software.security.myapplication.contentProvider;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -11,7 +11,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import java.util.Random;
+import com.software.security.myapplication.R;
 
 public class ContentProviderActivity extends AppCompatActivity {
 

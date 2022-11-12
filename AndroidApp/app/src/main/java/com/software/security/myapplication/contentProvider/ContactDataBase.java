@@ -1,4 +1,4 @@
-package com.software.security.myapplication;
+package com.software.security.myapplication.contentProvider;
 
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;

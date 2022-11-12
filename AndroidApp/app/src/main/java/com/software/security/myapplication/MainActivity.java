@@ -4,11 +4,12 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.text.format.Time;
-import android.util.Log;
 import android.view.View;
-import android.widget.Button;
 import android.widget.TextView;
+
+import com.software.security.myapplication.broadcast.BroadcastActivity;
+import com.software.security.myapplication.contentProvider.ContentProviderActivity;
+import com.software.security.myapplication.service.ServiceActivity;
 
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
