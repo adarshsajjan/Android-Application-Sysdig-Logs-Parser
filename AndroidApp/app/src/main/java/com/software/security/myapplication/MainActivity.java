@@ -20,31 +20,12 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         setCurrentTime();
-
-        /*Button broadcastButton = findViewById(R.id.broadcastButton);
-        broadcastButton.setOnClickListener(this);*/
     }
 
-    /*@Override
-    public void onClick(View view) {
-        switch (view.getId()) {
-            case R.id.broadcastButton:
-                launchBroadcast();
-                break;
-            default:
-                throw new IllegalStateException("Unexpected value: " + view.getId());
-        }
-    }*/
+    public void launchBroadcastActivity(View view) {
 
-    public void launchBroadcast(View view) {
-        //Create a broadcast receiver that listen to an customized action. You may use any string for your action, such as “com.example.homework”
-        //•When the intent is received, the receiver will show the current time and message embedded in the intent
-        //•You may use a text view to show the message or a toast text
-        //•Create the UI to send the broadcast intent and show the message sent to the receiver
-
-        Intent in = new Intent("com.example.homework");
-        sendBroadcast(in);
-        Log.d("BROADCAST: ", "Broadcast sent successfully!");
+        Intent in = new Intent(this, BroadcastActivity.class);
+        startActivity(in);
     }
 
     public void launchService(View view) {

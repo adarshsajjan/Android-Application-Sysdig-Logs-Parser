@@ -35,7 +35,7 @@
         android:layout_marginStart="28dp"
         android:background="@drawable/gradient_round_button"
         android:fontFamily="sans-serif-medium"
-        android:onClick="launchBroadcast"
+        android:onClick="launchBroadcastActivity"
         android:text="Broadcast"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"

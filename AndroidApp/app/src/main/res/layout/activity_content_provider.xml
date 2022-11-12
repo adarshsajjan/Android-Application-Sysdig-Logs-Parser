@@ -7,9 +7,23 @@
     android:background="@color/shade1"
     tools:context=".ContentProviderActivity">
 
+    <EditText
+        android:id="@+id/phoneInsert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.228"
+        app:layout_constraintStart_toEndOf="@+id/staticPhoneDisplay"
+        app:layout_constraintTop_toBottomOf="@+id/nameInsert"
+        app:layout_constraintVertical_bias="0.035" />
+
     <TextView
-        android:id="@+id/editTextTextPersonName4"
-        android:layout_width="50dp"
+        android:id="@+id/staticNameDisplay"
+        android:layout_width="70dp"
         android:layout_height="wrap_content"
         android:background="@color/purple_500"
         android:ems="10"
@@ -18,18 +32,81 @@
         android:textAlignment="center"
         android:textAllCaps="false"
         android:textColor="@color/white"
-        android:textSize="13sp"
+        android:textSize="15sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.214"
+        app:layout_constraintHorizontal_bias="0.14"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.265" />
+        app:layout_constraintVertical_bias="0.16" />
+
+    <Button
+        android:id="@+id/resetDbButton"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginEnd="38dp"
+        android:background="@drawable/gradient_round_button"
+        android:fontFamily="sans-serif-medium"
+        android:onClick="resetDB"
+        android:text="RESET"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.576"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.395" />
+
+    <Button
+        android:id="@+id/showDBEntriesButton"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:background="@drawable/gradient_round_button"
+        android:fontFamily="sans-serif-medium"
+        android:onClick="showDBEntries"
+        android:text="SHOW"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.843"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.395" />
+
+    <Button
+        android:id="@+id/insertToDBButton"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:background="@drawable/gradient_round_button"
+        android:fontFamily="sans-serif-medium"
+        android:onClick="insertToDB"
+        android:text="INSERT"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.156"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.39" />
+
+    <EditText
+        android:id="@+id/nameInsert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.228"
+        app:layout_constraintStart_toEndOf="@+id/staticNameDisplay"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.147" />
 
     <TextView
-        android:id="@+id/editTextTextPersonName3"
-        android:layout_width="50dp"
+        android:id="@+id/staticPhoneDisplay"
+        android:layout_width="70dp"
         android:layout_height="wrap_content"
         android:background="@color/purple_500"
         android:ems="10"
@@ -38,22 +115,28 @@
         android:textAlignment="center"
         android:textAllCaps="false"
         android:textColor="@color/white"
-        android:textSize="13sp"
+        android:textSize="15sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.214"
+        app:layout_constraintHorizontal_bias="0.14"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.315" />
+        app:layout_constraintVertical_bias="0.25" />
 
-    <EditText
-        android:id="@+id/editTextTextPersonName6"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+    <TextView
+        android:id="@+id/contactsShowView"
+        android:layout_width="285dp"
+        android:layout_height="334dp"
         android:ems="10"
-        android:inputType="textPersonName"
-         tools:layout_editor_absoluteX="143dp"
-        tools:layout_editor_absoluteY="174dp" />
+        android:gravity="start|top"
+        android:inputType="textMultiLine"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.814" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
 
