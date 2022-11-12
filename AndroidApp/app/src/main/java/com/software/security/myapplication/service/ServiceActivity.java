@@ -34,7 +34,7 @@ public class ServiceActivity extends AppCompatActivity {
 
         Calendar calendar;
         calendar = Calendar.getInstance();
-        SimpleDateFormat simpleDateFormat = new SimpleDateFormat("HH:mm");
+        SimpleDateFormat simpleDateFormat = new SimpleDateFormat("HH:mm:ss");
         String currDateTime = simpleDateFormat.format(calendar.getTime());
         timestampText.setText(currDateTime);
     }

@@ -19,7 +19,7 @@ public class BroadcastActivityReceiver extends BroadcastReceiver {
             @Override
             public void run() {
                 String currentTime = new SimpleDateFormat("HH:mm:ss", Locale.getDefault()).format(new Date());
-                Toast.makeText(context, "Time : " + currentTime + "\nMessage : " + intent.getStringExtra("message"), Toast.LENGTH_LONG).show();
+                Toast.makeText(context, "Time : " + currentTime + "\nMessage : " + intent.getStringExtra("message"), Toast.LENGTH_SHORT).show();
             }
         });
 

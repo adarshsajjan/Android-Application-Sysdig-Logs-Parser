@@ -27,7 +27,7 @@ public class TimeService extends Service {
     }
 
     public String getTimestamp() {
-        String currentTime = new SimpleDateFormat("HH:mm", Locale.getDefault()).format(new Date());
+        String currentTime = new SimpleDateFormat("HH:mm:ss", Locale.getDefault()).format(new Date());
         return currentTime;
     }
 
